@@ -5,7 +5,7 @@
     console.log('links:', links);
   });*/
 
-const titleClickHandler = function(event) {
+const titleClickHandler = function (event) {
   console.log('Link was clicked!');
   const clickedElement = this;
   event.preventDefault();
@@ -19,7 +19,6 @@ const titleClickHandler = function(event) {
   }
 
   /* add class 'active' to the clicked link */
-
 
   clickedElement.classList.add('active');
 
@@ -38,6 +37,10 @@ const titleClickHandler = function(event) {
   console.log(articleSelector);
 
   /* find the correct article using the selector (value of 'href' attribute) */
+
+  const targetArticle = document.querySelector(articleSelector);
+
+  console.log(targetArticle);
 
   /* add class 'active' to the correct article */
 }
