@@ -80,7 +80,6 @@ function generateTitleLinks() {
 
     /* get the article id */
 
-    const article = document.querySelector(optArticleSelector);
     const articleId = article.getAttribute('id');
 
     console.log(articleId);
@@ -108,11 +107,13 @@ function generateTitleLinks() {
 
   console.log(html);
 
-  const links = document.querySelectorAll('.titles a');
+const links = document.querySelectorAll('.titles a');
 
-  for (let activeLink of activeLinks) {
-    activeLink.classList.remove('active');
-  }
+console.log(links);
+
+for (let link of links) {
+  link.addEventListener('click', titleClickHandler);
+}
 }
 
 generateTitleLinks();
