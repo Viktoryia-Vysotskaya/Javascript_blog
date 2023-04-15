@@ -10,6 +10,7 @@ $color-three: rgb(244, 214, 219);
 $color-four: rgb(249, 99, 124);
 $color-five: rgb(25, 26, 33);
 $color-six: rgb(9, 112, 181);
+$color-seven: rgb(8, 170, 8);
 
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
@@ -34,7 +35,7 @@ body {
 
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .section-title {
@@ -80,10 +81,13 @@ body {
 .logo {
   font-family: $font-logo;
   font-weight: 400;
-  font-size: 104px;
+  font-size: 140px;
   line-height: 1;
+  word-spacing: 25px;
+  letter-spacing: 5px;
   text-align: center;
   color: $color-dark;
+  text-shadow: 1px 0 10px $color-dark, -1px -1px 0 $color-light;
 }
 
 /* Lists */
@@ -92,7 +96,8 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  color: $color-dark;
+  font-size: 18px;
+
   .active {
     font-weight: bold;
   }
@@ -102,6 +107,26 @@ body {
   li {
     display: inline-block;
   }
+}
+
+.list-horizontal li a {
+  font-family: $font-logo;
+  font-size: 25px;
+  font-weight: 500;
+  color: $color-dark;
+  text-decoration-style: dotted;
+  text-decoration-color: $color-dark;
+  text-shadow: 1px 0 10px $color-seven, -1px -1px 0 $color-light;
+  padding-left: 10px;
+}
+
+.titles a,
+.authors a {
+  color: $color-dark;
+  text-shadow: 1px 0 10px $color-dark, -1px -1px 0 $color-light;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* Authors */
@@ -117,20 +142,77 @@ body {
 .post {
   display: none;
   color: $color-dark;
+
   &.active {
     display: block;
   }
 }
 
-.post-author {
-  font-style: italic;
-  color: $color-six;
+.post-author a {
+  color: $color-dark;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  text-shadow: 1px 0 10px $color-seven, -1px -1px 0 $color-light;
+}
+
+.post-content p {
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-dark;
+  text-shadow: 1px 0 10px $color-one, -1px -1px 0 $color-light;
 }
 
 .post-tags {
+
   display: flex;
+
   p {
     margin: 0 10px 0 0;
     color: $color-four;
+    font-family: $font-header;
+    font-size: 20px;
   }
+}
+
+.post-title {
+  font-family: $font-header;
+  font-size: 30px;
+  text-shadow: 1px 0 10px $color-dark, -1px -1px 0 $color-light;
+  font-weight: 500;
+}
+
+/* Tags */
+
+.tag-size-5 {
+  font-family: $font-logo;
+  font-size: 35px;
+  font-weight: 500;
+  color: $color-six;
+  text-decoration-style: dotted;
+  text-decoration-color: $color-dark;
+}
+
+.tag-size-3 {
+  font-family: $font-logo;
+  font-size: 32px;
+  font-weight: 500;
+  color: $color-four;
+  text-decoration-style: dotted;
+  text-decoration-color: $color-dark;
+}
+
+.tag-size-1 {
+  font-family: $font-logo;
+  font-size: 29px;
+  font-weight: 500;
+  color: $color-seven;
+  text-decoration-style: dotted;
+  text-decoration-color: $color-dark;
+
+
+}
+
+.list .tags li {
+  display: inline-block;
 }
