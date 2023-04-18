@@ -252,7 +252,7 @@
   </script>
   <script id="template-tag-cloud-link" type="text/x-handlebars-template">
     {{#each tags}}
-    <li><a href="#tag-{{tag}}" class="{{className}}" >{{tag}}</a></li>
+    <li><a href="#tag-{{tag}}" class="{{className}}" >{{tag}} <span class="tag-count">({{count}})</span></a></li>
     {{/each}}
   </script>
   <script id="template-authors-cloud-link" type="text/x-handlebars-template">
