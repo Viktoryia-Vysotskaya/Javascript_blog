@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
+/* Variables */
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(105, 183, 235), rgb(179, 219, 211), rgb(244, 214, 219));
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 40px auto;
+}
+
+.section-title {
+  color: rgb(249, 99, 124);
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.section-title span {
+  text-transform: none;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  margin-left: 10px;
+}
+
+.sidebar {
+  flex: 1 0 0;
+}
+
+.posts {
+  flex: 2 0 0;
+}
+
+.sidebar,
+.posts {
+  background: rgb(224, 221, 221);
+  margin-right: 10px;
+  padding: 40px;
+  border: 1px solid rgb(25, 26, 33);
+  border-radius: 5px;
+}
+
+/* Logo */
+.logo {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-size: 140px;
+  line-height: 1;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 0 10px rgb(0, 0, 0), -1px -1px 0 rgb(224, 221, 221);
+}
+
+/* Lists */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.list .active {
+  font-weight: bold;
+}
+
+.list-horizontal li {
+  display: inline-block;
+}
+
+.list-horizontal li a {
+  font-family: "Sacramento", cursive;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgb(0, 0, 0);
+          text-decoration-color: rgb(0, 0, 0);
+  text-shadow: 1px 0 10px rgb(8, 170, 8), -1px -1px 0 rgb(224, 221, 221);
+  padding-left: 10px;
+}
+
+.titles a,
+.authors a {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 0 10px rgb(0, 0, 0), -1px -1px 0 rgb(224, 221, 221);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Authors */
+.authors li {
+  margin-bottom: 12px;
+}
+
+/* Post */
+.post {
+  display: none;
+  color: rgb(0, 0, 0);
+}
+.post.active {
+  display: block;
+}
+
+.post-author a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  text-shadow: 1px 0 10px rgb(8, 170, 8), -1px -1px 0 rgb(224, 221, 221);
+}
+
+.post-content p {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 0 10px rgb(105, 183, 235), -1px -1px 0 rgb(224, 221, 221);
+}
+
+.post-tags {
+  display: flex;
+}
+.post-tags p {
+  margin: 0 10px 0 0;
+  color: rgb(249, 99, 124);
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+.post-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  text-shadow: 1px 0 10px rgb(0, 0, 0), -1px -1px 0 rgb(224, 221, 221);
+  font-weight: 500;
+}
+
+/* Tags */
+.tag-size-5 {
+  font-family: "Sacramento", cursive;
+  font-size: 35px;
+  font-weight: 500;
+  color: rgb(9, 112, 181);
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgb(0, 0, 0);
+          text-decoration-color: rgb(0, 0, 0);
+}
+
+.tag-size-3 {
+  font-family: "Sacramento", cursive;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgb(249, 99, 124);
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgb(0, 0, 0);
+          text-decoration-color: rgb(0, 0, 0);
+}
+
+.tag-size-1 {
+  font-family: "Sacramento", cursive;
+  font-size: 29px;
+  font-weight: 500;
+  color: rgb(8, 170, 8);
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgb(0, 0, 0);
+          text-decoration-color: rgb(0, 0, 0);
+}
+
+span {
+  font-size: 18px;
+}
+
+.list .tags li {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBUSxxSEFBQTtBQUVSLGNBQUE7QUFnQkEsV0FBQTtBQUVBOzs7RUFHRSxzQkFBQTtBQ2hCRjs7QURtQkE7RUFDRSw4RkFBQTtFQUNBLDBDQVpVO0VBYVYsbUJBeEJXO0VBeUJYLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FDaEJGOztBRG1CQTtFQUNFLGlCQUFBO0VBQ0EsaUJBQUE7QUNoQkY7O0FEbUJBO0VBQ0Usd0JBaENXO0VBaUNYLGVBQUE7RUFDQSx5QkFBQTtFQUNBLGlDQTdCWTtFQThCWixnQkFBQTtBQ2hCRjtBRGtCRTtFQUNFLG9CQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0FDaEJKOztBRG9CQSxXQUFBO0FBRUE7RUFDRSxhQUFBO0VBQ0EsaUJBQUE7QUNsQkY7O0FEcUJBO0VBQ0UsV0FBQTtBQ2xCRjs7QURxQkE7RUFDRSxXQUFBO0FDbEJGOztBRHFCQTs7RUFFRSw4QkFuRVk7RUFvRVosa0JBQUE7RUFDQSxhQUFBO0VBQ0EsaUNBQUE7RUFDQSxrQkFBQTtBQ2xCRjs7QURxQkEsU0FBQTtBQUVBO0VBQ0Usa0NBbkVVO0VBb0VWLGdCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBbkZXO0VBb0ZYLG9FQUFBO0FDbkJGOztBRHNCQSxVQUFBO0FBRUE7RUFDRSxxQkFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0VBQ0EsZUFBQTtBQ3BCRjtBRHNCRTtFQUNFLGlCQUFBO0FDcEJKOztBRHlCRTtFQUNFLHFCQUFBO0FDdEJKOztBRDBCQTtFQUNFLGtDQWxHVTtFQW1HVixlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkE5R1c7RUErR1gscUNBQUE7VUFBQSw2QkFBQTtFQUNBLDJDQWhIVztVQWdIWCxtQ0FoSFc7RUFpSFgsc0VBQUE7RUFDQSxrQkFBQTtBQ3ZCRjs7QUQwQkE7O0VBRUUsbUJBdkhXO0VBd0hYLG9FQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUN2QkY7O0FEMEJBLFlBQUE7QUFHRTtFQUNFLG1CQUFBO0FDekJKOztBRDZCQSxTQUFBO0FBRUE7RUFDRSxhQUFBO0VBQ0EsbUJBMUlXO0FDK0diO0FENkJFO0VBQ0UsY0FBQTtBQzNCSjs7QUQrQkE7RUFDRSxtQkFsSlc7RUFtSlgscUJBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxzRUFBQTtBQzVCRjs7QUQrQkE7RUFDRSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkE1Slc7RUE2SlgsMEVBQUE7QUM1QkY7O0FEK0JBO0VBRUUsYUFBQTtBQzdCRjtBRCtCRTtFQUNFLGtCQUFBO0VBQ0Esd0JBbEtTO0VBbUtULGlDQTdKVTtFQThKVixlQUFBO0FDN0JKOztBRGlDQTtFQUNFLGlDQW5LWTtFQW9LWixlQUFBO0VBQ0Esb0VBQUE7RUFDQSxnQkFBQTtBQzlCRjs7QURpQ0EsU0FBQTtBQUVBO0VBQ0Usa0NBN0tVO0VBOEtWLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHVCQW5MVTtFQW9MVixxQ0FBQTtVQUFBLDZCQUFBO0VBQ0EsMkNBM0xXO1VBMkxYLG1DQTNMVztBQzRKYjs7QURrQ0E7RUFDRSxrQ0F0TFU7RUF1TFYsZUFBQTtFQUNBLGdCQUFBO0VBQ0Esd0JBOUxXO0VBK0xYLHFDQUFBO1VBQUEsNkJBQUE7RUFDQSwyQ0FwTVc7VUFvTVgsbUNBcE1XO0FDcUtiOztBRGtDQTtFQUNFLGtDQS9MVTtFQWdNVixlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxxQkFwTVk7RUFxTVoscUNBQUE7VUFBQSw2QkFBQTtFQUNBLDJDQTdNVztVQTZNWCxtQ0E3TVc7QUM4S2I7O0FEb0NBO0VBQ0UsZUFBQTtBQ2pDRjs7QURvQ0E7RUFDRSxxQkFBQTtBQ2pDRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

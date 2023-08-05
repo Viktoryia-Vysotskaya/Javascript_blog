@@ -185,6 +185,7 @@
     "gopd": "^1.0.1",
     "graceful-fs": "^4.2.11",
     "grapheme-splitter": "^1.0.4",
+    "handlebars": "^4.7.7",
     "has": "^1.0.3",
     "has-bigints": "^1.0.2",
     "has-flag": "^4.0.0",
